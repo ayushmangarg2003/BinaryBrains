@@ -78,6 +78,7 @@ p {
 }
 .hamburger {
   display: none;
+  width: 10rem;
 }
 .smallbanners {
   padding: 0rem 5rem;
@@ -100,7 +101,7 @@ p {
   background-size: 120%;
   background-position: left;
 }
-.box h2 {
+.box3 h2 {
   color: #f5f5f5;
 }
 .box2 {
@@ -467,6 +468,7 @@ jobs.html styles start
   background-repeat: no-repeat;
   background-size: cover;
   transition: 0.3s ease;
+  cursor: pointer;
 }
 .box:hover {
   transform: translateY(-10px);
@@ -479,7 +481,7 @@ jobs.html styles start
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: #f6f6f6;
 }
 .web {
   background-image: url("./Images/webimg.jpg");
@@ -577,7 +579,7 @@ jobs.html styles end
 .containerContact .contactInfo .boxCon .icon {
   min-width: 60px;
   height: 60px;
-  background: white;
+  background: #f6f6f6;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -599,7 +601,7 @@ jobs.html styles end
 .contactForm {
   width: 40%;
   padding: 40px;
-  background: white;
+  background: #f6f6f6;
 }
 .contactForm h2 {
   font-size: 30px;
@@ -667,6 +669,12 @@ jobs.html styles end
 
 /* MEDIA QUERY  */
 @media (max-width: 850px) {
+  .header a {
+    width: 20rem;
+  }
+  .header a img {
+    width: 8rem;
+  }
   .contactimg {
     display: none;
   }
@@ -676,50 +684,7 @@ jobs.html styles end
   .contactus {
     height: 40vh;
   }
-  .whoarewe {
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    width: 100%;
-    align-items: center;
-    height: 75vh;
-    /* height: auto; */
-  }
-  .whoimg {
-    width: 40%;
-    padding: 10%;
-    display: flex;
-  }
-  .whotext {
-    width: 80%;
-    padding: 5% 10%;
-  }
-  .blogs {
-    padding: 2rem;
-  }
-  .blog {
-    height: 20vh;
-    width: 90%;
-  }
-  .blogimg {
-    width: 50%;
-  }
-  .blogtext {
-    width: 40%;
-    margin-left: 30px;
-  }
-  .blogtext h4 {
-    margin-top: 30px;
-    font-size: 22px;
-  }
-  .blogtext p {
-    font-size: 16px;
-  }
 
-  .blogtext h5 {
-    font-size: 12px;
-  }
   .navbar {
     display: flex;
     flex-direction: column;
@@ -729,7 +694,7 @@ jobs.html styles end
     top: 0;
     right: -330px;
     height: 100vh;
-    width: 250px;
+    width: 325px;
     box-shadow: 0px 40px 60px rgba(0, 0, 0, 0.3);
     background: linear-gradient(to right, #0052d4, #4364f7, #61b1fc);
     padding: 100px 0px 0px 80px;
@@ -752,12 +717,11 @@ jobs.html styles end
     margin-left: 25px;
   }
   #closebtn {
-    display: initial;
+    display: block;
     position: absolute;
-    top: 40px;
-    right: 90px;
+    top: 2rem;
     color: #f5f5f5;
-    font-size: 30px;
+    font-size: 40px;
   }
   .homepage {
     height: 70vh;
@@ -777,11 +741,10 @@ jobs.html styles end
     background-size: 300%;
     background-position: left;
   }
-  .box1 h4,
   .box1 h2,
-  .box1 div,
   .box1 button {
     margin-left: 30px;
+    color: #f6f6f6;
   }
   .newsinput {
     width: 100%;
